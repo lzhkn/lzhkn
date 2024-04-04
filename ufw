@@ -1,0 +1,22 @@
+#!/bin/bash
+sudo ./home/andrey/brest/01-02_mount.sh
+sudo apt install -y ufw
+sudo systemctl enable ufw
+sudo systemctl start ufw
+sudo ufw enable
+sudo ufw allow 22/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw allow 29876/tcp
+sudo ufw allow 5030/tcp
+sudo ufw allow 9869/tcp
+sudo ufw allow 4124/tcp
+sudo ufw allow 2633/tcp
+sudo ufw allow 4124/udp
+sudo ufw allow 2616/tcp
+sudo ufw allow 2474/tcp
+sudo ufw allow 9443/tcp
+sudo ufw allow 623/udp
+sudo ufw allow 8472/udp
+sudo ufw allow 5900:7000/tcp
+sudo ufw status numbered
