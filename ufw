@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo ./home/andrey/brest/01-02_mount.sh
 sudo apt install -y ufw
 sudo systemctl enable ufw
 sudo systemctl start ufw
